@@ -48,7 +48,7 @@ const WEDDING_CONFIG = {
     name:           '<span class="venue-name-primary">Hotel Grand Palazzo</span><span class="venue-name-secondary">ਹੋਟਲ ਗ੍ਰੈਂਡ ਪਲਾਜ਼ੋ</span>',
     address:        'Guru Gobind Singh Nagar, Daba Road,<br />Near Oswal Mill, Ludhiana, Punjab',
     displayDate:    'Wednesday, November 11, 2026 (ਬੁੱਧਵਾਰ 11 ਨਵੰਬਰ 2026)',
-    displayTime:    'Jaago: 8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
+    displayTime:    'Jaggo: 8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
     googleMapsLink: 'https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Palazzo+Guru+Gobind+Singh+Nagar+Daba+Road+Near+Oswal+Mill+Ludhiana+Punjab',
   },
 
@@ -83,7 +83,7 @@ const WEDDING_CONFIG = {
   websiteUrl: window.location.href,
   get whatsappMessage() {
     return (
-      `🌸 *Wedding Invitation* 🌸\n\n` +
+      `🌸 *Jaggo Program Invitation* 🌸\n\n` +
       `॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ॥\n` +
       `ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ, ਆਪੇ ਮੇਹਰ ਕਰਾਈ॥\n` +
       `ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ, ਇਹ ਤਿਸ ਵਡਿਆਈ॥\n\n` +
@@ -94,7 +94,7 @@ const WEDDING_CONFIG = {
       `*${this.bride.fullName}*\n` +
       `(ਸਪੁੱਤਰੀ ਸਰਦਾਰਨੀ ਜਸਵੀਰ ਕੌਰ ਅਤੇ ਸਰਦਾਰ ਅਮਰਜੀਤ ਸਿੰਘ ਨਿਵਾਸੀ ਲੁਧਿਆਣਾ) ਜੀ ਨਾਲ ਹੋਣ ਜਾ ਰਿਹਾ ਹੈ।\n\n` +
       `📅 ਮਿਤੀ / Day: Wednesday, November 11, 2026 (ਦਿਨ ਬੁੱਧਵਾਰ 11 ਨਵੰਬਰ 2026)\n` +
-      `🎉 ਜਾਗੋ / Jaago: 8:00 ਵਜੇ ਰਾਤ (8:00 PM Night)\n` +
+      `🎉 ਜਾਗੋ / Jaggo: 8:00 ਵਜੇ ਰਾਤ (8:00 PM Night)\n` +
       `📍 ਸਥਾਨ / Venue: Hotel Grand Palazzo, Guru Gobind Singh Nagar, Daba Road, Near Oswal Mill, Ludhiana\n\n` +
       `ਸਵਾਗਤ ਕਰਤਾ: ਭੰਮਰਾ ਪਰਿਵਾਰ, ਮਠਾੜੂ ਪਰਿਵਾਰ, ਲੋਟੇ ਪਰਿਵਾਰ\n` +
       `ਘਰ ਦੀ ਰੌਣਕ: ਏਕਬੀਰ, ਗੁਰਨਿਵਾਜ਼, ਗੁਰਖਵਾਬ, ਗੁਰਮਨ\n` +
@@ -107,7 +107,7 @@ const WEDDING_CONFIG = {
   /* ── Events ──────────────────────────────────────────── */
   events: [
     {
-      name:       'Jaago Night (ਜਾਗੋ ਸਮਾਰੋਹ)',
+      name:       'Jaggo Night (ਜਾਗੋ ਸਮਾਰੋਹ)',
       icon:       '🌟',
       date:       'Wednesday, November 11, 2026',
       time:       '8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
@@ -124,8 +124,8 @@ const WEDDING_CONFIG = {
    ============================================================ */
 const TRANSLATIONS = {
   en: {
-    pageTitle: 'Jaspreet & Taranpreet — Wedding Invitation',
-    metaDesc: 'Join us in celebrating the wedding of Jaspreet Singh & Taranpreet Kaur at Hotel Grand Palazzo, Ludhiana on Wednesday, November 11, 2026.',
+    pageTitle: '🌸 Jaspreet & Taranpreet — Jaggo Program Invitation',
+    metaDesc: 'Jaggo Program • Wednesday, November 11, 2026 (8:00 PM Night) • Hotel Grand Palazzo, Ludhiana. Tap to view the interactive royal invitation.',
     
     // Envelope
     cardCoupleName: 'Jaspreet & Taranpreet',
@@ -149,7 +149,7 @@ const TRANSLATIONS = {
     lblHours: 'Hours',
     lblMins: 'Mins',
     lblSecs: 'Secs',
-    btnHeroEvents: 'Jaago Program',
+    btnHeroEvents: 'Jaggo Program',
     btnHeroBlessings: 'With Blessings Of',
     heroScrollHint: 'Scroll',
 
@@ -167,12 +167,12 @@ const TRANSLATIONS = {
     coupleBrideBio: 'Blessed with grace, humility, and warmth, Taranpreet carries forward cherished values and rich cultural traditions with deep love and devotion.',
 
     // Events Section
-    eventsPre: 'Jaago Program',
+    eventsPre: 'Jaggo Program',
     eventsTitle: 'Program Details (ਪ੍ਰੋਗਰਾਮ)',
     eventsBtnMap: '📍 View on Google Maps',
     events: [
       {
-        name: 'Jaago Night (ਜਾਗੋ ਸਮਾਰੋਹ)',
+        name: 'Jaggo Night (ਜਾਗੋ ਸਮਾਰੋਹ)',
         icon: '🌟',
         date: 'Wednesday, November 11, 2026',
         time: '8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
@@ -225,7 +225,7 @@ const TRANSLATIONS = {
     venueAddress: 'Guru Gobind Singh Nagar, Daba Road,<br />Near Oswal Mill, Ludhiana, Punjab',
     venueScheduleLabel: 'Date & Auspicious Program',
     venueDate: 'Wednesday, November 11, 2026',
-    venueTime: 'Jaago: 8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
+    venueTime: 'Jaggo: 8:00 PM Night (8:00 ਵਜੇ ਰਾਤ)',
     venueMapsBtn: '📍 Get Directions',
     venueMapsNote: 'Opens Google Maps navigation to Hotel Grand Palazzo, Daba Road, Ludhiana.',
     venueMapPlaceholderTitle: 'Interactive Live Navigation',
@@ -247,7 +247,7 @@ const TRANSLATIONS = {
 
     // WhatsApp Message
     whatsappText: (url) =>
-      `🌸 *Wedding Invitation* 🌸\n\n` +
+      `🌸 *Jaggo Program Invitation* 🌸\n\n` +
       `॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ॥\n` +
       `ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ, ਆਪੇ ਮੇਹਰ ਕਰਾਈ॥\n` +
       `ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ, ਇਹ ਤਿਸ ਵਡਿਆਈ॥\n\n` +
@@ -269,8 +269,8 @@ const TRANSLATIONS = {
   },
 
   pa: {
-    pageTitle: 'ਜਸਪ੍ਰੀਤ ਅਤੇ ਤਰਨਪ੍ਰੀਤ — ਵਿਆਹ ਦਾ ਸੱਦਾ ਪੱਤਰ',
-    metaDesc: 'ਜਸਪ੍ਰੀਤ ਸਿੰਘ ਅਤੇ ਤਰਨਪ੍ਰੀਤ ਕੌਰ ਦੇ ਵਿਆਹ ਸਮਾਗਮ (ਹੋਟਲ ਗ੍ਰੈਂਡ ਪਲਾਜ਼ੋ, ਡਾਬਾ ਰੋਡ, ਲੁਧਿਆਣਾ) ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਦਾ ਨਿੱਘਾ ਸੱਦਾ ਪੱਤਰ।',
+    pageTitle: '🌸 ਜਸਪ੍ਰੀਤ ਅਤੇ ਤਰਨਪ੍ਰੀਤ — ਜਾਗੋ ਪ੍ਰੋਗਰਾਮ ਸੱਦਾ ਪੱਤਰ',
+    metaDesc: 'ਜਾਗੋ ਪ੍ਰੋਗਰਾਮ • ਦਿਨ ਬੁੱਧਵਾਰ, 11 ਨਵੰਬਰ 2026 (ਰਾਤ 8:00 ਵਜੇ) • ਹੋਟਲ ਗ੍ਰੈਂਡ ਪਲਾਜ਼ੋ, ਲੁਧਿਆਣਾ। ਸ਼ਾਹੀ ਸੱਦਾ ਪੱਤਰ ਦੇਖਣ ਲਈ ਕਲਿੱਕ ਕਰੋ।',
 
     // Envelope
     cardCoupleName: 'ਜਸਪ੍ਰੀਤ ਅਤੇ ਤਰਨਪ੍ਰੀਤ',
@@ -317,7 +317,7 @@ const TRANSLATIONS = {
     eventsBtnMap: '📍 ਨਕਸ਼ਾ ਤੇ ਰਸਤਾ ਦੇਖੋ',
     events: [
       {
-        name: 'ਜਾਗੋ ਸਮਾਰੋਹ (Jaago Night)',
+        name: 'ਜਾਗੋ ਸਮਾਰੋਹ (Jaggo Night)',
         icon: '🌟',
         date: 'ਦਿਨ ਬੁੱਧਵਾਰ, 11 ਨਵੰਬਰ 2026',
         time: '8:00 ਵਜੇ ਰਾਤ',
@@ -392,7 +392,7 @@ const TRANSLATIONS = {
 
     // WhatsApp Message
     whatsappText: (url) =>
-      `🌸 *ਵਿਆਹ ਦਾ ਸ਼ਾਹੀ ਸੱਦਾ ਪੱਤਰ* 🌸\n\n` +
+      `🌸 *ਜਾਗੋ ਪ੍ਰੋਗਰਾਮ ਸੱਦਾ ਪੱਤਰ* 🌸\n\n` +
       `॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ॥\n` +
       `ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ, ਆਪੇ ਮੇਹਰ ਕਰਾਈ॥\n` +
       `ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ, ਇਹ ਤਿਸ ਵਡਿਆਈ॥\n\n` +
@@ -782,7 +782,7 @@ function renderEvents(lang = currentLang) {
 
       <!-- Authentic Dotted Program Row (Just like on the physical card) -->
       <div class="event-dotted-row">
-        <span class="event-dotted-label">${isPa ? 'ਜਾਗੋ' : 'Jaago'}</span>
+        <span class="event-dotted-label">${isPa ? 'ਜਾਗੋ' : 'Jaggo'}</span>
         <span class="event-dotted-dots" aria-hidden="true">····································</span>
         <span class="event-dotted-time">${isPa ? '8:00 ਵਜੇ ਰਾਤ' : '8:00 PM Night'}</span>
       </div>
@@ -1799,7 +1799,7 @@ function initWhatsApp() {
       ? t.whatsappText(url)
       : WEDDING_CONFIG.whatsappMessage;
     return {
-      title: 'Taranpreet & Jaspreet — Royal Wedding Invitation',
+      title: '🌸 Jaspreet & Taranpreet — Royal Wedding Invitation',
       text: msgText,
       url: url,
     };
