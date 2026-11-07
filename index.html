@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" class="envelope-locked">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaspreet &amp; Taranpreet — Royal Wedding Invitation | ਸ਼ਾਹੀ ਵਿਆਹ ਦਾ ਸੱਦਾ ਪੱਤਰ</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="🌸 Jaspreet &amp; Taranpreet — Royal Wedding Invitation" />
+  <meta name="description" content="Wednesday, November 11, 2026 • Hotel Grand Palazzo, Daba Road, Ludhiana. With the divine blessings of Sri Waheguru Ji and our families, Jaspreet Singh &amp; Taranpreet Kaur warmly invite you to their wedding." />
+  <meta name="author" content="Jaspreet Singh &amp; Taranpreet Kaur" />
+
+  <!-- Open Graph / WhatsApp / Facebook / Instagram / Telegram / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jaspreet &amp; Taranpreet Wedding" />
+  <meta property="og:title" content="🌸 Jaspreet &amp; Taranpreet — Royal Wedding Invitation" />
+  <meta property="og:description" content="Anand Karaj • Wednesday, November 11, 2026 • Hotel Grand Palazzo, Ludhiana. Tap to view the full interactive royal invitation." />
+  <meta property="og:image" content="assets/images/og-wedding-card.jpg" />
+  <meta property="og:image:secure_url" content="assets/images/og-wedding-card.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:image:alt" content="Royal Wedding Invitation — Taranpreet Kaur &amp; Jaspreet Singh" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:locale:alternate" content="pa_IN" />
+
+  <!-- Twitter / X Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="🌸 Taranpreet &amp; Jaspreet — Royal Wedding Invitation" />
+  <meta name="twitter:description" content="Anand Karaj • Wednesday, November 11, 2026 • Hotel Grand Palazzo, Ludhiana. Tap to view the royal interactive wedding invitation." />
+  <meta name="twitter:image" content="assets/images/og-wedding-card.jpg" />
+  <meta name="twitter:image:alt" content="Royal Wedding Invitation — Taranpreet Kaur &amp; Jaspreet Singh" />
+
+  <!-- Mobile Browsers & App Chrome -->
+  <meta name="theme-color" content="#0A192F" />
+  <meta name="msapplication-navbutton-color" content="#0A192F" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Favicon / Web Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/ek_onkar.svg" />
+  <link rel="apple-touch-icon" href="assets/images/og-square.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Great+Vibes&family=Mukta+Mahee:wght@400;500;600;700&family=Noto+Serif+Gurmukhi:wght@400;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-lang="en" class="envelope-locked">
+
+  <!-- Ambient Royal Golden Stardust Canvas -->
+  <canvas id="ambient-particles" class="ambient-particles" aria-hidden="true"></canvas>
+
+  <!-- Celebration Rose Petals & Golden Confetti Shower Canvas -->
+  <canvas id="petal-shower-canvas" class="petal-shower-canvas" aria-hidden="true"></canvas>
+
+  <!-- Global Royal Notification Toast -->
+  <div id="toast-notify" class="toast-notify" role="status" aria-live="polite"></div>
+
+  <!-- ================================================
+       FLOATING ROYAL LANGUAGE TOGGLE SWITCH
+  ================================================ -->
+  <aside class="lang-toggle-container" role="region" aria-label="Language selection">
+    <div class="lang-switch-capsule" id="lang-switch">
+      <div class="lang-switch-thumb" id="lang-thumb" aria-hidden="true"></div>
+      <button class="lang-choice-btn active" id="btn-lang-en" data-lang="en" aria-label="Switch to English" title="English">
+        <span class="lang-text">English</span>
+      </button>
+      <button class="lang-choice-btn" id="btn-lang-pa" data-lang="pa" aria-label="ਪੰਜਾਬੀ ਵਿੱਚ ਦੇਖੋ" title="ਪੰਜਾਬੀ">
+        <span class="lang-text">ਪੰਜਾਬੀ</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================================================
+       ROYAL WEDDING BACKGROUND MUSIC
+  ================================================ -->
+  <audio id="wedding-audio" preload="auto" loop>
+    <source src="assets/wedding-music.mp.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <!-- Floating Royal Music Controller -->
+  <aside class="royal-music-controller" id="music-controller" aria-label="Wedding Music Player">
+    <button class="music-toggle-btn" id="btn-toggle-music" aria-label="Toggle wedding music" title="Toggle Wedding Melody">
+      <div class="music-disc-medallion" aria-hidden="true">
+        <span class="music-note-icon">🎵</span>
+      </div>
+      <div class="music-eq-waves" aria-hidden="true">
+        <span class="eq-wave eq-1"></span>
+        <span class="eq-wave eq-2"></span>
+        <span class="eq-wave eq-3"></span>
+      </div>
+      <span class="music-label-pill" id="music-label-display">Gurbani &amp; Wedding Melody</span>
+    </button>
+  </aside>
+
+  <!-- ======================================================
+       ENVELOPE / WELCOME SCREEN (Burgundy Floral Envelope)
+  ====================================================== -->
+  <!-- ======================================================
+       ROYAL PALACE GATES / WELCOME ENTRANCE SCREEN
+  ====================================================== -->
+  <section id="envelope-screen" class="royal-gates-screen" role="dialog" aria-label="Royal Palace Gates Wedding Invitation">
+
+    <!-- Grand Archway Frame & Ambient Stage -->
+    <div class="gates-stage" id="gates-stage">
+
+      <!-- Divine Golden Light behind gates (bursts when opening) -->
+      <div class="gate-light-leak" aria-hidden="true"></div>
+
+      <!-- Palace Gate Arch Pelmet / Toran Header -->
+      <div class="gates-top-toran" aria-hidden="true">
+        <div class="toran-arch-shape"></div>
+        <div class="toran-filigree">
+          <span class="toran-star">✦</span>
+          <span class="toran-invocation">॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥</span>
+          <span class="toran-star">✦</span>
+        </div>
+      </div>
+
+      <!-- The Two 3D Palace Gates Container -->
+      <div class="royal-gates-container" id="envelope-container">
+
+        <!-- ═════════ INNER PALACE PORTAL (Revealed behind doors) ═════════ -->
+        <div class="gates-inner-portal" aria-hidden="true">
+          <div class="portal-light-burst"></div>
+          <div class="portal-arch-silhouette"></div>
+          <div class="portal-content">
+            <span class="portal-crest-icon">ੴ</span>
+            <span class="portal-welcome-text">॥ ਜੀ ਆਇਆਂ ਨੂੰ ॥</span>
+            <span class="portal-sub-text">Welcome to the Royal Wedding</span>
+          </div>
+          <div class="portal-glitter-field">
+            <span class="pg-1">✦</span>
+            <span class="pg-2">✧</span>
+            <span class="pg-3">✦</span>
+            <span class="pg-4">✧</span>
+          </div>
+        </div>
+
+        <!-- ═════════ LEFT PALACE GATE DOOR ═════════ -->
+        <div class="royal-gate-door gate-left" id="gate-left">
+          <div class="door-inner">
+            <div class="door-wood-texture"></div>
+            <div class="door-frame-border"></div>
+            
+            <!-- Carved Arch Panel -->
+            <div class="door-arch-panel">
+              <div class="door-mandala-texture"></div>
+              <div class="door-filigree-arch"></div>
+            </div>
+
+            <!-- Fort Studs / Brass Bosses -->
+            <div class="door-studs-column">
+              <span class="door-stud ds-1"></span>
+              <span class="door-stud ds-2"></span>
+              <span class="door-stud ds-3"></span>
+              <span class="door-stud ds-4"></span>
+              <span class="door-stud ds-5"></span>
+            </div>
+
+            <!-- Traditional Indian Door Knocker Handle -->
+            <div class="door-knocker knocker-left" aria-hidden="true">
+              <div class="knocker-rosette"></div>
+              <div class="knocker-ring"></div>
+            </div>
+
+            <!-- Left Door Meeting Edge Trim -->
+            <div class="door-edge-trim edge-left"></div>
+          </div>
+        </div>
+
+        <!-- ═════════ RIGHT PALACE GATE DOOR ═════════ -->
+        <div class="royal-gate-door gate-right" id="gate-right">
+          <div class="door-inner">
+            <div class="door-wood-texture"></div>
+            <div class="door-frame-border"></div>
+
+            <!-- Carved Arch Panel -->
+            <div class="door-arch-panel">
+              <div class="door-mandala-texture"></div>
+              <div class="door-filigree-arch"></div>
+            </div>
+
+            <!-- Fort Studs / Brass Bosses -->
+            <div class="door-studs-column">
+              <span class="door-stud ds-1"></span>
+              <span class="door-stud ds-2"></span>
+              <span class="door-stud ds-3"></span>
+              <span class="door-stud ds-4"></span>
+              <span class="door-stud ds-5"></span>
+            </div>
+
+            <!-- Traditional Indian Door Knocker Handle -->
+            <div class="door-knocker knocker-right" aria-hidden="true">
+              <div class="knocker-rosette"></div>
+              <div class="knocker-ring"></div>
+            </div>
+
+            <!-- Right Door Meeting Edge Trim -->
+            <div class="door-edge-trim edge-right"></div>
+          </div>
+        </div>
+
+        <!-- Central Royal Medallion Seal (acts as origin for rose petals & focal lock) -->
+        <div class="gate-central-seal" id="env-wax-seal" aria-hidden="true">
+          <div class="seal-halo"></div>
+          <div class="seal-shockwave"></div>
+          <div class="seal-core">
+            <span class="seal-crest">ੴ</span>
+            <span class="seal-monogram">J &amp; T</span>
+          </div>
+        </div>
+
+      </div><!-- /.royal-gates-container -->
+
+      <!-- Floating Royal Invitation Card & Gate Prompt -->
+      <div class="gate-open-controls">
+        <div class="gate-royal-card">
+          <p class="gate-subtext" id="card-subtext">Are getting married</p>
+          <h2 class="gate-couple-names" id="env-card-couple-name">Jaspreet &amp; Taranpreet</h2>
+          <div class="gate-card-divider">✦ ❖ ✦</div>
+          <p class="gate-date-badge" id="card-date-badge">11 · 11 · 2026</p>
+        </div>
+
+        <button class="btn-royal-open btn-gate-open" id="btn-open-invite" aria-label="Open palace gates">
+          <span class="open-door-icon">🚪</span>
+          <span class="open-label" id="open-label">OPEN GATES · ਦਰਵਾਜ਼ੇ ਖੋਲ੍ਹੋ</span>
+          <span class="open-shine-sparkle">✦</span>
+        </button>
+      </div>
+
+    </div><!-- /.gates-stage -->
+
+    <button class="btn-skip" id="btn-skip" aria-label="Skip gate animation">Skip →</button>
+  </section>
+
+
+  <!-- ======================================================
+       MAIN WEBSITE (hidden until envelope opens)
+  ====================================================== -->
+  <div id="main-site" class="main-site site-collapsed" aria-hidden="true">
+
+
+
+    <!-- ================================================
+         A. HERO SECTION
+    ================================================ -->
+    <section id="hero" class="hero-section" aria-label="Wedding invitation hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/images/mandala_hero_bg.png" alt="" class="hero-mandala-bg" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Decorative petals -->
+      <div class="hero-petals" aria-hidden="true">
+        <div class="hero-petal hp-1"></div>
+        <div class="hero-petal hp-2"></div>
+        <div class="hero-petal hp-3"></div>
+        <div class="hero-petal hp-4"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <!-- Royal Darbar Card Wrapper -->
+        <div class="royal-hero-card reveal-scale">
+          
+          <!-- Ornate Card Corner Ornaments -->
+          <div class="card-corner cc-tl" aria-hidden="true"></div>
+          <div class="card-corner cc-tr" aria-hidden="true"></div>
+          <div class="card-corner cc-bl" aria-hidden="true"></div>
+          <div class="card-corner cc-br" aria-hidden="true"></div>
+
+          <!-- Top Crest: Ik Onkar & Blessings -->
+          <div class="royal-card-header">
+            <div class="royal-crest-badge" aria-label="Ik Onkar">
+              <svg class="royal-ik-onkar-svg" viewBox="0 0 245.38 171.43" aria-hidden="true" focusable="false">
+                <g transform="translate(404.28 47.626)">
+                  <path d="m-334.62 120.24c-1.0331-0.48095-2.9166-1.8685-4.1854-3.0834-6.878-6.5855-10.741-16.131-12.796-31.619-1.0459-7.8831-0.91146-13.194 0.69303-27.372 0.37231-3.2899 0.61287-6.0456 0.53458-6.1239-0.0783-0.0783-0.58805 0.17269-1.1328 0.55773-1.7142 1.2117-6.5235 3.4822-9.4425 4.458-8.5854 2.87-18.573 2.4783-25.724-1.0088-6.9933-3.4101-12.29-9.6279-14.137-16.596-1.3875-5.2332-1.004-13.348 0.89945-19.031 2.838-8.473 8.5792-13.469 18.068-15.722 8.2549-1.9602 20.487-1.4994 28.112 1.0589 9.858 3.3076 14.924 10.172 16.258 22.033 0.52504 4.666-0.0534 20.894-1.2771 35.827-1.5567 18.997-1.5157 22.511 0.37225 31.947 1.2988 6.4914 2.7085 10.334 6.0734 16.553 4.2668 7.8864 4.0748 7.4478 3.6273 8.2839-0.56747 1.0603-3.4868 0.98032-5.9423-0.16283zm-29.591-73.699c7.8024-2.3133 12.764-6.2831 14.392-11.516 1.661-5.3367 0.0867-11.94-3.6726-15.406-3.629-3.3451-8.2827-4.6804-16.293-4.6749-8.6483 6e-3 -13.368 1.4929-16.921 5.3314-2.3909 2.5825-3.3804 5.0778-3.6181 9.1239-0.43245 7.362 2.432 13.093 8.0093 16.023 3.4862 1.832 6.0382 2.339 10.943 2.1743 3.0406-0.10212 4.8343-0.36674 7.1602-1.0563zm87.208 65.518c-4.8537-0.6291-10.803-2.4089-14.817-4.4327-5.9615-3.0058-13.056-9.371-16.879-15.144-9.8101-14.815-13.988-33.893-13.989-63.877l-2e-4 -7.3201-3.2632-5e-3c-1.7948-3e-3 -3.4659-0.13406-3.7137-0.29129-0.34083-0.21629-0.42672-1.6105-0.35279-5.7272l0.0977-5.4413 7.174-0.20043 0.19066-1.3109c0.10487-0.72099 0.28909-2.184 0.40941-3.2512 0.1203-1.0672 0.61723-3.7534 1.1043-5.9695 4.4375-20.19 17.109-32.701 35.57-35.122 14.738-1.932 26.916 1.8618 36.471 11.363 1.2378 1.2307 2.28 2.1921 2.3159 2.1364 5.8357-9.0424 10.737-13.631 19.316-18.082 6.6615-3.4566 12.21-4.676 19.575-4.3027 12.758 0.64663 23.492 5.3098 32.208 13.993 7.3074 7.2794 12.837 16.697 13.839 23.571 0.54246 3.7218-0.0204 5.6004-1.9622 6.5487-1.166 0.56943-1.5529 0.6043-2.7443 0.24735-1.713-0.51324-2.9756-2.1582-5.0492-6.5786-3.6222-7.7216-11.001-16.577-17.347-20.818-3.6378-2.4311-6.8357-3.878-11.069-5.0083-2.871-0.76648-4.1449-0.90007-8.8235-0.92529-6.3623-0.0343-8.2232 0.35789-13.286 2.7999-8.6805 4.1874-15.111 11.45-16.368 18.486-0.40585 2.271-0.37465 2.9288 0.3154 6.6506 0.42118 2.2717 0.76529 5.0724 0.76469 6.2238-2e-3 3.9629-1.8892 6.1968-5.2349 6.1968-3.4012 0-4.6758-1.4981-5.7242-6.7275-1.3854-6.9108-4.0359-12.074-8.479-16.517-6.063-6.063-12.76-8.8601-21.206-8.8568-12.912 5e-3 -22.36 5.1571-27.497 14.994-2.378 4.5536-3.7768 9.4299-5.4383 18.958l-0.23045 1.3215 84.568 0.1792 0.0977 5.4414c0.0739 4.1168-0.012 5.5109-0.35279 5.7272-0.24776 0.15724-1.7341 0.28832-3.303 0.29129l-2.8525 5e-3 -1.8592 5.0271c-5.4276 14.675-11.014 22.28-21.242 28.912-1.8834 1.2214-3.4298 2.3001-3.4363 2.3971-7e-3 0.097 1.2596 0.94135 2.8136 1.8763 4.0537 2.4389 8.6579 6.4025 10.962 9.4367 3.9893 5.2536 5.6183 9.948 5.6228 16.204 0.01 13.89-8.3279 24.04-21.855 26.605-2.7422 0.51988-11.974 0.71398-15.042 0.31627zm13.406-11.94c5.0906-1.4041 8.9009-4.2727 10.8-8.1314 0.93837-1.9061 1.1432-2.7864 1.2864-5.5286 0.14845-2.8427 0.0566-3.5885-0.71527-5.8072-0.48708-1.4001-1.6144-3.567-2.5053-4.8154-3.0348-4.2529-9.1258-9.1661-13.708-11.057-2.6584-1.0972-4.091-1.1468-15.62-0.54099-4.4626 0.23451-24.213 0.4384-24.213 0.4384l0.22436 0.79375c4.0175 14.214 10.63 24.669 19.336 30.574 3.0559 2.0728 7.6262 3.8624 11.824 4.6302 2.5409 0.46468 10.848 0.11702 13.289-0.5561zm-19.399-47.106c7.1673-0.47708 9.8779-1.005 14.112-2.7486 9.0984-3.7463 14.144-8.3549 18.983-17.337 1.5764-2.9267 4.4836-9.2622 4.9778-10.848l0.24739-0.79375h-66.723l9e-3 5.3799c9e-3 5.4587 0.4762 17.512 0.90852 23.46l0.23721 3.2632s24.147-0.16882 27.247-0.37516z"/>
+                </g>
+              </svg>
+            </div>
+            <p class="royal-blessing-text" id="royal-blessing-text">॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ॥<br />ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ, ਆਪੇ ਮੇਹਰ ਕਰਾਈ॥<br />ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ, ਇਹ ਤਿਸ ਵਡਿਆਈ॥</p>
+            <div class="royal-header-flourish" aria-hidden="true">
+              <span class="flourish-line"></span>
+              <span class="flourish-symbol">✦ ◈ ✦</span>
+              <span class="flourish-line"></span>
+            </div>
+            <p class="royal-together-text" id="royal-together-text">ਸਰਦਾਰਨੀ ਕੁਲਦੀਪ ਕੌਰ ਅਤੇ ਸਵ: ਸਰਦਾਰ ਮਲਕੀਤ ਸਿੰਘ ਆਪ ਜੀ ਨੂੰ ਬੇਨਤੀ ਕਰਦੇ ਹਨ ਕਿ ਸਾਡੇ ਲਾਡਲੇ ਪੋਤਰੇ</p>
+          </div>
+
+          <!-- Grand Names Display -->
+          <div class="royal-names-container">
+            <h1 class="royal-couple-names">
+              <span class="royal-name groom-name" id="hero-groom-name">Jaspreet</span>
+              <span class="royal-amp" id="royal-amp">&amp;</span>
+              <span class="royal-name bride-name" id="hero-bride-name">Taranpreet</span>
+            </h1>
+            <p class="royal-invitation-sub" id="royal-invitation-sub">(ਸਪੁੱਤਰ ਸਰਦਾਰਨੀ ਬਲਜੀਤ ਕੌਰ ਅਤੇ ਸਵ: ਸਰਦਾਰ ਜਗਜੀਤ ਸਿੰਘ) ਦਾ ਸ਼ੁਭ ਅਨੰਦ ਕਾਰਜ (ਸਪੁੱਤਰੀ ਸਰਦਾਰਨੀ ਜਸਵੀਰ ਕੌਰ ਅਤੇ ਸਰਦਾਰ ਅਮਰਜੀਤ ਸਿੰਘ ਨਿਵਾਸੀ ਲੁਧਿਆਣਾ) ਨਾਲ ਹੋਣ ਜਾ ਰਿਹਾ ਹੈ। ਆਪ ਸਭ ਪਹੁੰਚਣ ਦੀ ਕ੍ਰਿਪਾਲਤਾ ਕਰਨੀ ਜੀ।</p>
+          </div>
+
+          <!-- The Centerpiece: Royal Photo Showcase -->
+          <div class="royal-photo-showcase">
+            <div class="royal-photo-frame">
+              <div class="photo-corner pc-tl" aria-hidden="true"></div>
+              <div class="photo-corner pc-tr" aria-hidden="true"></div>
+              <div class="photo-corner pc-bl" aria-hidden="true"></div>
+              <div class="photo-corner pc-br" aria-hidden="true"></div>
+
+              <picture>
+                <source srcset="assets/images/couple_gurdwara_hero.webp" type="image/webp" />
+                <source srcset="assets/images/couple_gurdwara_hero.jpg" type="image/jpeg" />
+                <img src="assets/images/couple_gurdwara_hero.webp" width="565" height="1024" loading="eager" alt="Taranpreet Kaur &amp; Jaspreet Singh at their Anand Karaj ceremony" class="royal-photo-img hero-couple-img" id="hero-couple-img" />
+              </picture>
+              
+              <!-- Floating Date & City Plaque -->
+              <div class="royal-photo-plaque" aria-hidden="true">
+                <div class="plaque-date-row">
+                  <span class="plaque-dot">✦</span>
+                  <span class="plaque-date" id="hero-wedding-date">Wednesday, November 11, 2026</span>
+                  <span class="plaque-dot">✦</span>
+                </div>
+                <div class="plaque-venue-row">
+                  <span class="plaque-venue" id="hero-venue">Hotel Grand Palazzo • Ludhiana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wedding Message -->
+          <p class="royal-invitation-msg" id="hero-message">
+            With the divine blessings of Sri Waheguru Ji and the love of our parents,<br />
+            we invite you to witness our sacred vows and join us in joyous celebration.
+          </p>
+
+          <!-- Royal Countdown Timer -->
+          <div class="royal-countdown-section">
+            <p class="royal-countdown-heading" id="royal-countdown-heading">Auspicious Moment In</p>
+            <div class="royal-timer" id="hero-countdown" aria-label="Wedding countdown">
+              <div class="timer-unit">
+                <span class="timer-num" id="hc-days">00</span>
+                <span class="timer-lbl" id="lbl-hc-days">Days</span>
+              </div>
+              <span class="timer-sep" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-num" id="hc-hours">00</span>
+                <span class="timer-lbl" id="lbl-hc-hours">Hours</span>
+              </div>
+              <span class="timer-sep" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-num" id="hc-mins">00</span>
+                <span class="timer-lbl" id="lbl-hc-mins">Mins</span>
+              </div>
+              <span class="timer-sep" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-num" id="hc-secs">00</span>
+                <span class="timer-lbl" id="lbl-hc-secs">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="royal-cta-buttons">
+            <a href="#events" class="btn-royal-primary">
+              <span id="btn-hero-events">Jaago Program</span>
+              <span class="btn-icon">↓</span>
+            </a>
+            <a href="#rsvp" class="btn-royal-secondary">
+              <span id="btn-hero-blessings">With Blessings Of</span>
+            </a>
+          </div>
+
+        </div><!-- /.royal-hero-card -->
+
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span id="hero-scroll-hint-text">Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         B. COUPLE SECTION
+    ================================================ -->
+    <section id="couple" class="couple-section section-padding" aria-label="About the couple">
+      <div class="section-header reveal-fade">
+        <p class="section-pre" id="couple-pre">The Beloved</p>
+        <h2 class="section-title" id="couple-title">The Couple</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="couple-grid">
+        <!-- Groom -->
+        <article class="couple-card reveal-left" aria-label="About the groom">
+          <div class="couple-img-wrapper">
+            <img src="assets/images/groom_portrait.png" alt="The Groom — Jaspreet Singh" class="couple-img" loading="lazy" />
+            <div class="couple-img-ring" aria-hidden="true"></div>
+            <div class="couple-img-badge" aria-hidden="true">
+              <svg class="couple-badge-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="badgeGoldGroom" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFEBB0"/>
+                    <stop offset="40%" stop-color="#DEB84A"/>
+                    <stop offset="80%" stop-color="#B28424"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="46" r="18" stroke="url(#badgeGoldGroom)" stroke-width="4.5" fill="none"/>
+                <path d="M50 12 C48.5 19 46.5 26 46.5 44 C46.5 60 47.5 65 48 68 L52 68 C52.5 65 53.5 60 53.5 44 C53.5 26 51.5 19 50 12 Z" fill="url(#badgeGoldGroom)"/>
+                <rect x="44" y="68" width="12" height="3" rx="1" fill="url(#badgeGoldGroom)"/>
+                <rect x="48" y="71" width="4" height="9" rx="1" fill="url(#badgeGoldGroom)"/>
+                <circle cx="50" cy="82" r="2.5" fill="url(#badgeGoldGroom)"/>
+                <path d="M50 82 C41 82 35 77 30 68 C24 57 24 43 28 30 C27 36 27.5 44 31 53 C35 62 41 68 47 70 L48 66 C42 63 38 57 35 49 C32 39 33 30 35 24 C31 33 29 46 32 58 C35 68 42 75 50 77 Z" fill="url(#badgeGoldGroom)"/>
+                <path d="M50 82 C59 82 65 77 70 68 C76 57 76 43 72 30 C73 36 72.5 44 69 53 C65 62 59 68 53 70 L52 66 C58 63 62 57 65 49 C68 39 67 30 65 24 C69 33 71 46 68 58 C65 68 58 75 50 77 Z" fill="url(#badgeGoldGroom)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="couple-info">
+            <div class="couple-role-badge">
+              <p class="couple-role" id="couple-groom-role">The Groom</p>
+            </div>
+            <h3 class="couple-name" id="couple-groom-name">Jaspreet Singh</h3>
+            <div class="couple-divider" aria-hidden="true">
+              <span class="couple-divider-gem">✦</span>
+            </div>
+            <div class="couple-lineage-card">
+              <p class="couple-parents" id="couple-groom-parents">Son of Sardarni Baljeet Kaur &amp; Late Sardar Jagjeet Singh (Grandson of Sardarni Kuldeep Kaur &amp; Late Sardar Malkeet Singh)</p>
+            </div>
+            <p class="couple-bio" id="couple-groom-bio">
+              Grounded in Sikh values and integrity, Jaspreet embodies honor, generosity, and humility, upholding the beloved lineage of his family.
+            </p>
+          </div>
+        </article>
+
+        <!-- Bride -->
+        <article class="couple-card reveal-right" aria-label="About the bride">
+          <div class="couple-img-wrapper">
+            <img src="assets/images/bride_portrait.png" alt="The Bride — Taranpreet Kaur" class="couple-img" loading="lazy" />
+            <div class="couple-img-ring" aria-hidden="true"></div>
+            <div class="couple-img-badge" aria-hidden="true">
+              <svg class="couple-badge-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="badgeGoldBride" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFEBB0"/>
+                    <stop offset="40%" stop-color="#DEB84A"/>
+                    <stop offset="80%" stop-color="#B28424"/>
+                  </linearGradient>
+                </defs>
+                <path d="M50 18 C53 28 58 40 50 60 C42 40 47 28 50 18 Z" fill="url(#badgeGoldBride)"/>
+                <path d="M50 32 C42 35 35 42 37 54 C42 58 47 58 50 60 C47 51 48 40 50 32 Z" fill="url(#badgeGoldBride)"/>
+                <path d="M50 32 C58 35 65 42 63 54 C58 58 53 58 50 60 C53 51 52 40 50 32 Z" fill="url(#badgeGoldBride)"/>
+                <path d="M34 62 C40 67 46 69 50 69 C54 69 60 67 66 62 C62 70 56 72 50 72 C44 72 38 70 34 62 Z" fill="url(#badgeGoldBride)"/>
+                <circle cx="50" cy="60" r="3" fill="#7A1428"/>
+              </svg>
+            </div>
+          </div>
+          <div class="couple-info">
+            <div class="couple-role-badge">
+              <p class="couple-role" id="couple-bride-role">The Bride</p>
+            </div>
+            <h3 class="couple-name" id="couple-bride-name">Taranpreet Kaur</h3>
+            <div class="couple-divider" aria-hidden="true">
+              <span class="couple-divider-gem">✦</span>
+            </div>
+            <div class="couple-lineage-card">
+              <p class="couple-parents" id="couple-bride-parents">Daughter of Sardarni Jasvir Kaur &amp; Sardar Amarjit Singh (Residents of Ludhiana)</p>
+            </div>
+            <p class="couple-bio" id="couple-bride-bio">
+              Blessed with grace, humility, and warmth, Taranpreet carries forward cherished values and rich cultural traditions with deep love and devotion.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================
+         C. EVENTS SECTION
+    ================================================ -->
+    <section id="events" class="events-section section-padding" aria-label="Wedding events">
+      <div class="events-bg-motif" aria-hidden="true"></div>
+
+      <div class="section-header reveal-fade">
+        <p class="section-pre" id="events-pre">Mark Your Calendar</p>
+        <h2 class="section-title" id="events-title">Wedding Events</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="events-grid" id="events-grid">
+        <!-- Event cards are injected by JavaScript -->
+      </div>
+    </section>
+
+
+
+    <!-- ================================================
+         F. COUNTDOWN SECTION
+    ================================================ -->
+    <section id="countdown" class="countdown-section section-padding" aria-label="Countdown to wedding day">
+      <div class="countdown-bg" aria-hidden="true">
+        <img src="assets/images/mandala_hero_bg.png" alt="" class="countdown-mandala" />
+        <div class="countdown-overlay"></div>
+      </div>
+
+      <div class="countdown-content">
+        <p class="section-pre light reveal-fade" id="countdown-pre">The Big Day Is</p>
+        <h2 class="countdown-title reveal-fade" id="countdown-event-name">Almost Here!</h2>
+
+        <div class="countdown-timer reveal-scale" id="countdown-timer" aria-label="Time remaining">
+          <div class="count-block">
+            <span class="count-num" id="cd-days">00</span>
+            <span class="count-label" id="lbl-cd-days">Days</span>
+          </div>
+          <div class="count-sep" aria-hidden="true">:</div>
+          <div class="count-block">
+            <span class="count-num" id="cd-hours">00</span>
+            <span class="count-label" id="lbl-cd-hours">Hours</span>
+          </div>
+          <div class="count-sep" aria-hidden="true">:</div>
+          <div class="count-block">
+            <span class="count-num" id="cd-mins">00</span>
+            <span class="count-label" id="lbl-cd-mins">Minutes</span>
+          </div>
+          <div class="count-sep" aria-hidden="true">:</div>
+          <div class="count-block">
+            <span class="count-num" id="cd-secs">00</span>
+            <span class="count-label" id="lbl-cd-secs">Seconds</span>
+          </div>
+        </div>
+
+        <p class="countdown-date-display reveal-fade" id="countdown-date-display"></p>
+        <div class="countdown-message reveal-fade" id="countdown-message" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         G. WELCOMING & WELL WISHERS (ਸਵਾਗਤ ਅਤੇ ਦਰਸ਼ਨ ਅਭਿਲਾਸ਼ੀ)
+    ================================================ -->
+    <section id="rsvp" class="names-section section-padding" aria-label="Wedding families and well wishers">
+      <div class="section-header reveal-fade">
+        <p class="section-pre" id="rsvp-pre">With Best Compliments &amp; Warm Welcomes</p>
+        <h2 class="section-title" id="rsvp-title">
+          <span class="section-title-main">ਸਵਾਗਤ ਅਤੇ ਦਰਸ਼ਨ ਅਭਿਲਾਸ਼ੀ</span>
+          <span class="section-title-sub">(Welcoming &amp; Well Wishers)</span>
+        </h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <!-- Three Pillars from Printed Card: Welcoming, Joy of House, Well Wishers -->
+      <div class="family-trio-grid">
+        
+        <!-- 1. Swagat Karta (Welcoming) -->
+        <div class="family-trio-card reveal-left">
+          <div class="family-trio-header">
+            <span class="trio-icon">🌸</span>
+            <h4 class="family-trio-title" id="swagat-title">ਸਵਾਗਤ ਕਰਤਾ</h4>
+          </div>
+          <div class="family-trio-divider" aria-hidden="true">✦</div>
+          <div class="family-trio-content" id="swagat-content">
+            <p class="trio-item">ਭੰਮਰਾ ਪਰਿਵਾਰ (Bhamra Family)</p>
+            <p class="trio-item">ਮਠਾੜੂ ਪਰਿਵਾਰ (Matharoo Family)</p>
+            <p class="trio-item">ਲੋਟੇ ਪਰਿਵਾਰ (Lote Family)</p>
+          </div>
+        </div>
+
+        <!-- 2. Ghar Di Raunak (Joy of House) -->
+        <div class="family-trio-card reveal-scale">
+          <div class="family-trio-header">
+            <span class="trio-icon">✨</span>
+            <h4 class="family-trio-title" id="raunak-title">ਘਰ ਦੀ ਰੌਣਕ</h4>
+          </div>
+          <div class="family-trio-divider" aria-hidden="true">✦</div>
+          <div class="family-trio-content" id="raunak-content">
+            <p class="trio-item highlighted-names">ਏਕਬੀਰ • ਗੁਰਨਿਵਾਜ਼</p>
+            <p class="trio-item highlighted-names">ਗੁਰਖ਼ਵਾਬ • ਗੁਰਮਨ</p>
+            <p class="trio-sub">Ekbeer, Gurniwaz, Gurkhwaab, Gurman</p>
+          </div>
+        </div>
+
+        <!-- 3. Darshan Abhilashi (Well Wishers) -->
+        <div class="family-trio-card reveal-right">
+          <div class="family-trio-header">
+            <span class="trio-icon">🙏</span>
+            <h4 class="family-trio-title" id="darshan-title">ਦਰਸ਼ਨ ਅਭਿਲਾਸ਼ੀ</h4>
+          </div>
+          <div class="family-trio-divider" aria-hidden="true">✦</div>
+          <div class="family-trio-content">
+            <p class="darshan-names" id="darshan-names">ਸਾਰੇ ਰਿਸ਼ਤੇਦਾਰ ਅਤੇ ਮਿੱਤਰ<br><span class="en-sub">All Relatives &amp; Friends</span></p>
+            <div class="contact-chips" id="contact-chips">
+              <a href="tel:7998400013" class="contact-chip" aria-label="Call 79984-00013">
+                <span class="chip-icon">📞</span>
+                <span class="chip-num">79984-00013</span>
+              </a>
+              <a href="tel:7998500013" class="contact-chip" aria-label="Call 79985-00013">
+                <span class="chip-icon">📞</span>
+                <span class="chip-num">79985-00013</span>
+              </a>
+              <a href="tel:9815092114" class="contact-chip" aria-label="Call 98150-92114">
+                <span class="chip-icon">📞</span>
+                <span class="chip-num">98150-92114</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Punctuality Courtesy Note from Wedding Card -->
+      <div class="punctuality-badge reveal-fade" id="punctuality-badge">
+        <span class="punctuality-icon">⏱️</span>
+        <span class="punctuality-text" id="punctuality-text">ਸਮੇਂ ਸਿਰ ਪਹੁੰਚਣ ਦੀ ਕ੍ਰਿਪਾਲਤਾ ਕੀਤੀ ਜਾਵੇ • Please grace the occasion on time</span>
+      </div>
+
+      <!-- Blessing line -->
+      <p class="names-blessing reveal-fade" id="names-blessing-text">
+        ੴ ਸਤਿ ਨਾਮੁ — Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh
+      </p>
+    </section>
+
+    <!-- ================================================
+         H. VENUE SECTION
+    ================================================ -->
+    <section id="venue" class="venue-section section-padding" aria-label="Venue information">
+      <div class="section-header reveal-fade">
+        <p class="section-pre" id="venue-pre">Find Us Here</p>
+        <h2 class="section-title" id="venue-title">Venue &amp; Directions</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="venue-grid">
+        <div class="venue-info-card reveal-left">
+          <div class="venue-medallion-wrap">
+            <div class="medallion-ring venue-medallion-ring" aria-hidden="true">
+              <svg class="medallion-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="venueGoldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFF3D1"/>
+                    <stop offset="50%" stop-color="#E5C158"/>
+                    <stop offset="100%" stop-color="#B38728"/>
+                  </linearGradient>
+                </defs>
+                <!-- Nishan Sahib Flagpole & Triangular Flag -->
+                <line x1="24" y1="3" x2="24" y2="12" stroke="url(#venueGoldGlow)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M24 4 L31 7 L24 10 Z" fill="url(#venueGoldGlow)"/>
+                <!-- Kalas / Finial -->
+                <circle cx="24" cy="13" r="1.5" fill="url(#venueGoldGlow)"/>
+                <!-- Main Gurdwara Dome -->
+                <path d="M24 14.5 C22 17 14 20 14 27 C14 28 15 28.5 16 28.5 L32 28.5 C33 28.5 34 28 34 27 C34 20 26 17 24 14.5 Z" fill="url(#venueGoldGlow)"/>
+                <!-- Dome base cornice -->
+                <rect x="13" y="28.5" width="22" height="2" rx="1" fill="#FFF3D1"/>
+                <!-- Gurdwara Facade -->
+                <path d="M15 30.5 L33 30.5 L34 42 L14 42 Z" fill="url(#venueGoldGlow)" opacity="0.95"/>
+                <!-- Three Sacred Darshani Arches -->
+                <path d="M21 42 V35.5 C21 33.8 22.3 33 24 33 C25.7 33 27 33.8 27 35.5 V42 Z" fill="#2A050D"/>
+                <path d="M16.5 42 V37 C16.5 35.8 17.5 35.2 18.5 35.2 V42 Z" fill="#2A050D"/>
+                <path d="M29.5 42 V35.2 C30.5 35.2 31.5 35.8 31.5 37 V42 Z" fill="#2A050D"/>
+                <!-- Steps base -->
+                <rect x="11" y="42" width="26" height="2" rx="1" fill="url(#venueGoldGlow)"/>
+                <rect x="9" y="44" width="30" height="2" rx="1" fill="#B38728"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="venue-badge-wrap">
+            <span class="venue-pill-badge" id="venue-pill-badge">Hotel Grand Palazzo • Nuptial Venue</span>
+          </div>
+
+          <h3 class="venue-name" id="venue-name-display">
+            <span class="venue-name-primary" id="venue-name-primary">Hotel Grand Palazzo</span>
+            <span class="venue-name-secondary" id="venue-name-secondary">ਹੋਟਲ ਗ੍ਰੈਂਡ ਪਲਾਜ਼ੋ</span>
+          </h3>
+
+          <div class="venue-divider" aria-hidden="true">
+            <span class="venue-divider-gem">✦</span>
+          </div>
+
+          <div class="venue-compartments">
+            <div class="venue-compartment">
+              <div class="venue-compartment-header">
+                <span class="venue-comp-icon" aria-hidden="true">📍</span>
+                <span class="venue-comp-label" id="venue-location-label">Sacred Location &amp; Address</span>
+              </div>
+              <address class="venue-address" id="venue-address-display">
+                Guru Gobind Singh Nagar, Daba Road,<br />Near Oswal Mill, Ludhiana, Punjab
+              </address>
+            </div>
+
+            <div class="venue-compartment">
+              <div class="venue-compartment-header">
+                <span class="venue-comp-icon" aria-hidden="true">🗓</span>
+                <span class="venue-comp-label" id="venue-schedule-label">Date &amp; Auspicious Program</span>
+              </div>
+              <div class="venue-date-highlight" id="venue-date-display">Wednesday, November 11, 2026</div>
+              <div class="venue-time-highlight" id="venue-time-display">Jaago Night: 8:00 PM Night (ਜਾਗੋ: 8:00 ਵਜੇ ਰਾਤ)</div>
+            </div>
+          </div>
+
+          <a id="venue-maps-btn" href="https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Palazzo+Guru+Gobind+Singh+Nagar+Daba+Road+Near+Oswal+Mill+Ludhiana+Punjab" target="_blank" rel="noopener noreferrer"
+             class="btn-royal-primary venue-maps-btn" aria-label="Get directions to venue on Google Maps">
+            📍 Get Directions
+          </a>
+          <p class="venue-maps-note" id="venue-maps-note">
+            Opens Google Maps navigation to Hotel Grand Palazzo, Daba Road, Ludhiana.
+          </p>
+        </div>
+
+        <div class="venue-map-card reveal-right">
+          <div class="venue-map-top-bar">
+            <span class="map-live-dot" aria-hidden="true"></span>
+            <span class="map-top-title" id="venue-map-placeholder-title">Interactive Live Navigation</span>
+          </div>
+
+          <div class="venue-map-frame-wrapper">
+            <iframe class="venue-map-iframe"
+              src="https://maps.google.com/maps?q=Hotel+Grand+Palazzo+Guru+Gobind+Singh+Nagar+Daba+Road+Near+Oswal+Mill+Ludhiana+Punjab&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              title="Hotel Grand Palazzo Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="venue-map-floating-plaque">
+            <div class="map-plaque-info">
+              <span class="map-plaque-pin" aria-hidden="true">📍</span>
+              <div class="map-plaque-text">
+                <div class="map-plaque-venue">Hotel Grand Palazzo</div>
+                <div class="map-note" id="venue-map-placeholder-desc">Guru Gobind Singh Nagar, Daba Road, Near Oswal Mill, Ludhiana</div>
+              </div>
+            </div>
+            <a id="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Palazzo+Guru+Gobind+Singh+Nagar+Daba+Road+Near+Oswal+Mill+Ludhiana+Punjab" target="_blank" rel="noopener noreferrer"
+               class="venue-map-open-btn" aria-label="Open venue in Google Maps">
+              Open in Google Maps ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         FOOTER
+    ================================================ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-mandala" aria-hidden="true"></div>
+
+      <div class="footer-content">
+        <p class="footer-names" id="footer-names">Jaspreet &amp; Taranpreet</p>
+        <p class="footer-date" id="footer-date">11 · 11 · 2026</p>
+        <div class="footer-divider" aria-hidden="true">✦ ✦ ✦</div>
+        <p class="footer-message" id="footer-message">
+          Thank you for being a part of our celebration. We cherish your love,
+          blessings, and presence as we begin this beautiful journey together.
+        </p>
+
+        <div class="footer-actions">
+          <button class="btn-whatsapp" id="btn-whatsapp" aria-label="Share invitation on WhatsApp">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span id="btn-whatsapp-text">Share on WhatsApp</span>
+          </button>
+          <button class="btn-royal-share" id="btn-share-all" aria-label="Share invitation on social media">
+            <span class="share-icon">💌</span>
+            <span id="btn-share-all-text">Share Invitation</span>
+          </button>
+          <button class="btn-outline btn-back-top" id="btn-back-top" aria-label="Back to top">
+            <span id="btn-back-top-text">↑ Back to Top</span>
+          </button>
+        </div>
+
+        <p class="footer-credit" id="footer-credit">Made with ❤️ for a lifetime of love — Jaspreet &amp; Taranpreet</p>
+
+        <!-- Elegant Minimal Developer Credit -->
+        <div class="developer-credit-wrap">
+          <div class="dev-credit-divider" aria-hidden="true">
+            <span class="dev-divider-line"></span>
+            <span class="dev-divider-gem">✦</span>
+            <span class="dev-divider-line"></span>
+          </div>
+          <div class="developer-credit-badge">
+            <p class="developer-credit">
+              <span class="dev-credit-prefix">Designed &amp; Developed by</span>
+              <a href="https://webstudiohub.in" target="_blank" rel="noopener noreferrer" class="dev-credit-brand" title="WebStudioHub.in — Premium Web Studio">
+                WebStudioHub<span class="dev-brand-tld">.in</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /#main-site -->
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
