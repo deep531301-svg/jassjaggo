@@ -54,7 +54,7 @@ const WEDDING_CONFIG = {
 
   swagatKarta: {
     title:    'Welcoming Families (ਸਵਾਗਤ ਕਰਤਾ)',
-    families: ['ਭੰਮਰਾ ਪਰਿਵਾਰ (Bhamra Family)', 'ਮਠਾੜੂ ਪਰਿਵਾਰ (Matharoo Family)', 'ਲੋਟੇ ਪਰਿਵਾਰ (Lote Family)'],
+    families: ['ਭੰਮਰਾ ਪਰਿਵਾਰ (Bhamra Family)', 'ਮਠਾੜੂ ਪਰਿਵਾਰ (Matharoo Family)', 'ਲੋਟੇ ਪਰਿਵਾਰ (Lotey Family)'],
   },
 
   gharDiRaunak: {
@@ -209,7 +209,7 @@ const TRANSLATIONS = {
 
     // Three Pillars from Card
     swagatTitle: 'ਸਵਾਗਤ ਕਰਤਾ (Welcoming Families)',
-    swagatContent: '<p class="trio-item">ਭੰਮਰਾ ਪਰਿਵਾਰ (Bhamra Family)</p><p class="trio-item">ਮਠਾੜੂ ਪਰਿਵਾਰ (Matharoo Family)</p><p class="trio-item">ਲੋਟੇ ਪਰਿਵਾਰ (Lote Family)</p>',
+    swagatContent: '<p class="trio-item">ਭੰਮਰਾ ਪਰਿਵਾਰ (Bhamra Family)</p><p class="trio-item">ਮਠਾੜੂ ਪਰਿਵਾਰ (Matharoo Family)</p><p class="trio-item">ਲੋਟੇ ਪਰਿਵਾਰ (Lotey Family)</p>',
     raunakTitle: 'ਘਰ ਦੀ ਰੌਣਕ (Joy of the House)',
     raunakContent: '<p class="trio-item highlighted-names">ਏਕਬੀਰ • ਗੁਰਨਿਵਾਜ਼</p><p class="trio-item highlighted-names">ਗੁਰਖ਼ਵਾਬ • ਗੁਰਮਨ</p><p class="trio-sub">Ekbeer, Gurniwaz, Gurkhwaab, Gurman</p>',
     darshanTitle: 'ਦਰਸ਼ਨ ਅਭਿਲਾਸ਼ੀ (With Best Compliments)',
